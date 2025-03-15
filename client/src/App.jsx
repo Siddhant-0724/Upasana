@@ -1,11 +1,17 @@
-import './App.css'
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Home from "./Pages/Home";
 
 function App() {
   return (
-    <div className='bg-red-600'>
-     <h1>Hello world</h1>
-     </div>
-  )
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;
