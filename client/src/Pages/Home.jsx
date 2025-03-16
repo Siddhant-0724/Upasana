@@ -4,15 +4,17 @@ import Services from "@/Components/HomeComponents/Services";
 import AiGenratorSection from "@/Components/HomeComponents/AiGenratorSection";
 import Contribution from "@/Components/HomeComponents/Contribution";
 import ServiceCards from "@/Components/HomeComponents/ServiceCard";
+import Footer from "@/Components/HomeComponents/Footer";
 
 const Home = () => {
   return (
     <>
       <HeroSection /> 
       <Services/> 
-      <AiGenratorSection/> 
-      <Contribution/>
       <ServiceCards/>
+      <Contribution/>
+      <AiGenratorSection/> 
+      <Footer/>
     </>
   );
 };
